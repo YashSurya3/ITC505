@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Font Experiment</title>
+
+    <!-- Adding an odd font via Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap">
+
+    <style>
+        body {
+            font-family: 'Nosifer', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #d100d1;
+        }
+        p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Welcome to LAB 3!</h1></center>
+    <p>This is the font where the letters goes in a creepy way with the fluid drip animation in it.Using for Lab 3 in web technology
+    It’s definitely an unusual choice, perfect for standing out!</p>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
