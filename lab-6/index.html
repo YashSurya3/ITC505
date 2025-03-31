@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <!-- Using Google logo from a public URL -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo">
+        </div>
+
+        <h1>Welcome to My Amazing Web Page</h1>
+        
+       
+    </header>
+
+    <div class="grid-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">🏠 Home</a></li>
+                <li><a href="#">📖 About</a></li>
+                <li><a href="#">🛠 Services</a></li>
+                <li><a href="#">📩 Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h2>Sum of Cubes Calculator</h2>
+            <p>Enter numbers separated by commas:</p>
+            <input type="text" id="numberInput" placeholder="e.g. 2,3,4,5">
+            <br>
+            <button id="sumButton">🔢 Compute Sum of Cubes</button>
+            <p id="sumOutput"></p>
+        </main>
+
+        <!-- Advertisement Section with Amazon Logo -->
+        <aside class="advertisement">
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" 
+                     alt="Amazon Logo" class="ad-logo" />
+            </a>
+            <p>Click the logo to shop on Amazon!</p>
+        </aside>
+    </div>
+
+    <footer>
+        <h3>Addendum</h3>
+        <p><strong>Problem Solved:</strong> The goal was to allow users to input numbers and calculate the sum of their cubes dynamically using JavaScript.</p>
+        
+        <p><strong>Solution Overview:</strong> 
+            I implemented an input field where users can enter numbers separated by commas. A button triggers a JavaScript function that extracts the numbers, converts them into an array, and computes the sum of their cubes. The result is then displayed dynamically on the page.
+        </p>
+        
+        <p><strong>Challenges & Solutions:</strong></p>
+        <ul>
+            <li><strong>Handling Incorrect Inputs:</strong> If a user entered non-numeric characters, the script initially failed. I solved this by filtering out invalid values and showing an error message.</li>
+            <li><strong>Ensuring Interactivity:</strong> The sum should only be displayed after clicking the button. I used an event listener on the button to trigger the calculation.</li>
+            <li><strong>Improving UX:</strong> Added a clear prompt, styling, and hover effects to make interaction more intuitive.</li>
+        </ul>
+
+        <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
