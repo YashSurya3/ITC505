@@ -1,0 +1,80 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #1a1a1a;
+    color: #f0e6d2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+header {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 40px;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #5c3d2e;
+}
+main {
+    padding: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#story {
+    font-size: 24px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    max-width: 900px;
+    border: 1px solid #5c3d2e;
+    display: none;
+}
+#choices {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.choice-btn, #startBtn, #resetBtn {
+    background-color: #a0522d;
+    color: white;
+    padding: 18px 35px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.4s, transform 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Playfair Display', serif;
+}
+.choice-btn:hover, #startBtn:hover, #resetBtn:hover {
+    background-color: #8b4513;
+    transform: translateY(-5px);
+}
+footer {
+    margin-top: 60px;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    font-size: 16px;
+    color: #b0a89b;
+    border-top: 2px solid #5c3d2e;
+}
+#congrats {
+    font-size: 36px;
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+    display: none;
+}
