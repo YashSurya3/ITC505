@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Lib Form</title>
+  
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #4CAF50;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Addendum Style */
+    .addendum {
+      font-size: 0.9rem;
+      margin-top: 20px;
+      color: #555;
+      text-align: left;
+    }
+
+    .addendum p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mad Lib Generator</h1>
+    <form action="/ITC505/lab-7/index.html" method="POST" class="mad-lib-form">
+      <label for="noun">Noun:</label><br>
+      <input type="text" id="noun" name="noun" required><br><br>
+
+      <label for="verb">Verb:</label><br>
+      <input type="text" id="verb" name="verb" required><br>
+
+      <label for="adjective">Adjective:</label><br>
+      <input type="text" id="adjective" name="adjective" required><br>
+
+      <label for="adverb">Adverb:</label><br>
+      <input type="text" id="adverb" name="adverb" required><br>
+
+      <label for="place">Place:</label><br>
+      <input type="text" id="place" name="place" required><br>
+
+      <input type="submit" value="Create Mad Lib" class="btn">
+    </form>
+
+    <!-- Addendum Section -->
+    <div class="addendum">
+      <h3>Note:</h3>
+      <p>This Mad Lib generator is just for fun! Fill out the fields with your chosen words and create a funny story.</p>
+      <p>Remember, you can create multiple Mad Libs by clicking the "Create Mad Lib" button again!</p>
+      <p>If you need help, feel free to ask a friend or use a dictionary for inspiration.</p>
+    </div>
+  </div>
+</body>
+</html>
