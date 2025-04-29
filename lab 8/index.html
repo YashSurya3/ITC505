@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    form { max-width: 400px; margin: 50px auto; }
+    input { display: block; width: 100%; padding: 10px; margin: 10px 0; }
+    .error { color: red; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+  <form id="registrationForm">
+    <h2>Registration Form</h2>
+    
+    <input type="text" id="firstName" placeholder="First Name">
+    <span id="firstNameError" class="error"></span>
+
+    <input type="text" id="lastName" placeholder="Last Name">
+    <span id="lastNameError" class="error"></span>
+
+    <input type="text" id="email" placeholder="Email">
+    <span id="emailError" class="error"></span>
+
+    <input type="password" id="password" placeholder="Password">
+    <span id="passwordError" class="error"></span>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <span id="confirmPasswordError" class="error"></span>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Secure external script reference -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
